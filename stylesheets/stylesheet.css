@@ -56,6 +56,7 @@ body {
   font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -293,6 +294,8 @@ Full-Width Styles
   background: -ms-linear-gradient(top, #373737, #212121);
   background: -o-linear-gradient(top, #373737, #212121);
   background: linear-gradient(top, #373737, #212121);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 #header_wrap .inner {
@@ -356,8 +359,8 @@ Full-Width Styles
 
 #main_content_wrap {
   background: #f2f2f2;
-  border-top: 1px solid #111;
-  border-bottom: 1px solid #111;
+  border-top: 0px solid #111;
+  border-bottom: 0px solid #111;
 }
 
 #main_content {
@@ -365,7 +368,13 @@ Full-Width Styles
 }
 
 #footer_wrap {
-  background: #212121;
+  background:#212121;
+  border-top-left-radius:5px;
+  border-top-right-radius:5px;
+}
+#footer_wrap p
+{
+	text-align:center;
 }
 
 
@@ -422,4 +431,29 @@ Small Device Styles
     font-size: 11px;
   }
 
+}
+
+/*
+index button
+*/
+#index_button
+{
+	margin-top:80px;
+	padding:0px 30px 0px 30px;
+	margin-bottom:50px;
+}
+#index_button img
+{
+	width:35px;
+}
+#index_button a
+{
+	width:150px; 
+	padding:0px 0px 0px 0px;
+	border-radius:8px;
+}
+#index_button span
+{
+	font-weight:600;
+	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
 }

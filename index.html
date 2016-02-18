@@ -8,6 +8,16 @@
     
     <link rel="shortcut icon" href="images/headimg.png">
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.min.css">
+    
+    <script type="text/javascript" src="javascripts/jquery-2.0.0.min.js"></script>
+    <script type="text/javascript" src="javascripts/bootstrap.js"></script>
+    <script type="text/javascript" src="javascripts/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="stylesheets/monokai_sublime.min.css">
+	<script type="text/javascript" src="javascripts/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
 
     <title>Blog首页</title>
 
@@ -43,11 +53,31 @@
 <a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Designer Templates</h3>
 
 <p>We’ve crafted some handsome templates for you to use. Go ahead and click 'Continue to layouts' to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved.</p>
-<pre>
+<pre >
   var index = function(){ 
       var $content = $(this);
   }
 </pre>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>function outer() {
+    var localVal = 30;
+    return localVal;
+}
+
+console.log(outer()); //30
+
+function outer2() {
+    var localVal = 30;
+    return function() {
+        return localVal;
+    };
+}
+
+var func = outer2();
+console.log(func()); //30
+</code></pre>
+</div>
+
 <h3>
 <a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Creating pages manually</h3>
 

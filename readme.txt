@@ -1,4 +1,7 @@
-Git is a distributed version control system.
-Git is free software distributed under the GPL.
-Git has a mutable index called stage.
-Git tracks changes of files.
+
+1.Starting to use github pages.
+
+2.Learning how to push file from local repository to origin.
+
+                                                      
+							--- 2016/2/18

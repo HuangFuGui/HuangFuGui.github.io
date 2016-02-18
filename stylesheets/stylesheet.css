@@ -267,7 +267,7 @@ Full-Width Styles
 
 .inner {
   position: relative;
-  max-width: 700px;
+  max-width: 760px;
   padding: 20px 10px;
   margin: 0 auto;
 }
@@ -364,7 +364,10 @@ Full-Width Styles
 }
 
 #main_content {
-  padding-top: 40px;
+  padding: 30px 30px 40px 30px;
+  border-left:solid 1px #6C6C6C;
+  border-right:solid 1px #6C6C6C;
+  box-shadow:2px 2px 8px #B5B5B5;
 }
 
 #footer_wrap {
@@ -434,13 +437,37 @@ Small Device Styles
 }
 
 /*
+Myhead
+*/
+#Myhead
+{
+	width:120px;
+	margin:0px auto;
+	margin-top:0px;
+	opacity:0.7;
+}
+#Myhead a 
+{
+	border-radius:100px;
+}
+#Myhead a:hover
+{
+	box-shadow: 2px 2px 8px #B1B1B1;
+}
+#Myhead img
+{
+	width:100px;
+	border-radius:100px;
+}
+
+/*
 index button
 */
 #index_button
 {
-	margin-top:80px;
+	margin-top:60px;
 	padding:0px 30px 0px 30px;
-	margin-bottom:50px;
+	margin-bottom:40px;
 }
 #index_button img
 {
@@ -452,8 +479,13 @@ index button
 	padding:0px 0px 0px 0px;
 	border-radius:8px;
 }
+#index_button a:hover
+{
+	box-shadow: 2px 2px 8px #B1B1B1;
+}
 #index_button span
 {
 	font-weight:600;
 	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
 }
+

@@ -1,3 +1,11 @@
+
+
+
+/*********************************************
+  index.html                                 *
+*********************************************/
+
+
 /*******************************************************************************
 Slate Theme for GitHub Pages
 by Jason Costello, @jsncostello
@@ -300,7 +308,7 @@ Full-Width Styles
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   background-size:auto;
-  height:450px;
+  height:480px;
 }
 
 #header_wrap .inner {
@@ -499,4 +507,45 @@ foot
 #footer_p
 {
 	text-align:center;
+}
+
+
+
+
+/*********************************************
+  blogIndex.html                             *
+*********************************************/
+
+#blogIndex_header_container
+{
+	height:450px;
+	width:100%;
+}
+#blogIndex_header
+{
+	height:100px;
+	color:#FFFFFF;
+	text-shadow: 0px 0px 10px  #CFCFCF;
+	font-size:20px;
+	opacity:0.9;
+	width:1366px;
+	margin:0px auto;
+	z-index:1;
+	position:fixed;
+}
+
+#blogIndex_header a
+{
+	color:#FFFFFF;
+	opacity:0.8;
+	margin-left:40px;
+	position:relative;
+	top:15px;
+}
+#blogIndex_header a:hover
+{
+	opacity:1;
+	text-decoration:none;
+	text-shadow: 0px 0px 10px  #CFCFCF;
+	cursor:pointer;
 }

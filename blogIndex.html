@@ -28,7 +28,7 @@
     <div class="container" id="blogIndex_header_container" style="background-image:url(images/indexPage.jpg)">
         <div id="blogIndex_header" class="row affix">
             <div class=" col-xs-7 col-lg-3">
-                <a href="index.html"><span>Website</span></a>
+                <a href="index.html"><span>My website</span></a>
             </div>
             <div class=" col-lg-5"></div>
             <div class="col-xs-5 col-lg-4">
@@ -39,7 +39,32 @@
         </div>
     </div>
 
-    <div style=" height:5000px;"></div>
-    
+    <div id="back-to-top" style=" height:5000px;"></div>
+    <script type="text/javascript">
+	$(function ()
+ {
+	  $(window).scroll(function()
+	  {
+		  if ($(window).scrollTop()>450)
+		  {
+			  $("#blogIndex_header a").css("color","#000000");
+			  $("#blogIndex_header").css("background-color","rgba(65, 65, 65, 0.2)");
+		  }
+		  else 
+	  	  {
+			  $("#blogIndex_header a").css("color","#FFFFFF");
+			  $("#blogIndex_header").css("background-color","rgba(150, 150, 150, 0)");
+		  }
+				  	 
+	  });
+	  //当点击跳转链接后，回到页面顶部位置
+	  /*	  $("#back-to-top").click(function()
+	  {
+		  $('body,html').animate({scrollTop:0},1000);
+		  return false;
+	  });*/
+ });
+
+    </script>
 </body>
 </html>

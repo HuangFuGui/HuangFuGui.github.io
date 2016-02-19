@@ -65,6 +65,7 @@ h1, h2, h3, h4, h5, h6 {
   color:#222222;
   font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
   letter-spacing: -1px;
+  padding:10px 0px 0px 0px ;
 }
 
 h1 {
@@ -190,10 +191,12 @@ pre code {
 }
 
 blockquote {
-  color: #666;
+  color: #747474;
   margin-bottom: 20px;
   padding: 0 0 0 20px;
-  border-left: 3px solid #bbb;
+  border-left: 10px solid #747474;
+  font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+  font-style:italic;
 }
 
 
@@ -296,6 +299,8 @@ Full-Width Styles
   background: linear-gradient(top, #373737, #212121);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  background-size:auto;
+  height:450px;
 }
 
 #header_wrap .inner {
@@ -358,26 +363,25 @@ Full-Width Styles
 }
 
 #main_content_wrap {
-  background: #f2f2f2;
+  background: #FFFFFF;
   border-top: 0px solid #111;
   border-bottom: 0px solid #111;
 }
 
 #main_content {
   padding: 30px 30px 40px 30px;
-  border-left:solid 1px #6C6C6C;
-  border-right:solid 1px #6C6C6C;
-  box-shadow:2px 2px 8px #B5B5B5;
+  margin-top:5px;
 }
 
 #footer_wrap {
   background:#212121;
   border-top-left-radius:5px;
   border-top-right-radius:5px;
-}
-#footer_wrap p
-{
-	text-align:center;
+  margin-top:10px;
+  text-align:center;
+  height:50px;
+  color:#A8A8A8;
+  font-size:15px;
 }
 
 
@@ -441,9 +445,9 @@ Myhead
 */
 #Myhead
 {
-	width:120px;
+	width:130px;
 	margin:0px auto;
-	margin-top:0px;
+	margin-top:40px;
 	opacity:0.7;
 }
 #Myhead a 
@@ -489,3 +493,10 @@ index button
 	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
 }
 
+/*
+foot
+*/
+#footer_p
+{
+	text-align:center;
+}

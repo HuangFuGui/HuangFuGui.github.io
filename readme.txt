@@ -5,3 +5,9 @@
 
                                                       
 							--- 2016/2/18
+
+
+1.referencing some github pages and improving my website
+
+                                                        
+							--- 2016/2/19

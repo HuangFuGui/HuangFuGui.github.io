@@ -528,10 +528,9 @@ foot
 	text-shadow: 0px 0px 10px  #CFCFCF;
 	font-size:20px;
 	opacity:0.9;
-	width:1366px;
+	width:100%;
 	margin:0px auto;
 	z-index:1;
-	position:fixed;
 }
 
 #blogIndex_header a

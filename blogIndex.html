@@ -13,6 +13,7 @@
     <script type="text/javascript" src="javascripts/jquery-2.0.0.min.js"></script>
     <script type="text/javascript" src="javascripts/bootstrap.js"></script>
     <script type="text/javascript" src="javascripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="javascripts/blogIndex.js"></script>
     
     <link rel="stylesheet" type="text/css" href="stylesheets/monokai_sublime.min.css">
 	<script type="text/javascript" src="javascripts/highlight.min.js"></script>
@@ -25,7 +26,7 @@
   </head>
 
 <body>
-    <div class="container" id="blogIndex_header_container" style="background-image:url(images/indexPage.jpg)">
+    <div  class="container" id="blogIndex_header_container" style="background-image:url(images/indexPage.jpg)">
         <div id="blogIndex_header" class="row affix">
             <div class=" col-xs-7 col-lg-3">
                 <a href="index.html"><span>My website</span></a>
@@ -39,32 +40,9 @@
         </div>
     </div>
 
-    <div id="back-to-top" style=" height:5000px;"></div>
-    <script type="text/javascript">
-	$(function ()
- {
-	  $(window).scroll(function()
-	  {
-		  if ($(window).scrollTop()>450)
-		  {
-			  $("#blogIndex_header a").css("color","#000000");
-			  $("#blogIndex_header").css("background-color","rgba(65, 65, 65, 0.2)");
-		  }
-		  else 
-	  	  {
-			  $("#blogIndex_header a").css("color","#FFFFFF");
-			  $("#blogIndex_header").css("background-color","rgba(150, 150, 150, 0)");
-		  }
-				  	 
-	  });
-	  //当点击跳转链接后，回到页面顶部位置
-	  /*	  $("#back-to-top").click(function()
-	  {
-		  $('body,html').animate({scrollTop:0},1000);
-		  return false;
-	  });*/
- });
-
-    </script>
+    <div id="blogIndex_content_outer" class="outer" style=" height:5000px;">
+    	<div id="blogIndex_content" class="inner" style="height:5000px; background-color:#BCF1FF;">
+        </div>
+    </div>
 </body>
 </html>

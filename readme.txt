@@ -11,3 +11,9 @@
 
                                                         
 							--- 2016/2/19
+
+
+1.using some tags in bootstrap, some attributes like z-index , position:relative ,rgba() and scrollTo(js) to edit blogIndex.html
+
+
+						        --- 2016/2/20

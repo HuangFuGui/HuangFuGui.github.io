@@ -17,3 +17,9 @@
 
 
 						        --- 2016/2/20
+
+
+1.improve my blogIndex.html,change the color of navigation bar accroading the position of scrollTop()
+
+
+                                                        --- 2016/2/28

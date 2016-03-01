@@ -27,5 +27,7 @@
 
 1.use @media screen to set up my first blog page!
 
+2.improve my previous pages!
     
+
                                                         --- 2016/3/1

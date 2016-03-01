@@ -588,6 +588,14 @@ foot
 {
 	width:30px;
 }
+#blogcontenter a
+{
+	display:table-row;
+}
+#blogcontenter a :hover
+{
+	cursor:pointer;
+}
 #scrollToTop
 {
 	box-shadow:0px 0px 0px 0px;

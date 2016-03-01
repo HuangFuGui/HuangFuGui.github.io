@@ -23,3 +23,9 @@
 
 
                                                         --- 2016/2/28
+
+
+1.use @media screen to set up my first blog page!
+
+    
+                                                        --- 2016/3/1

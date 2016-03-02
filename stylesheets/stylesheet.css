@@ -1,6 +1,8 @@
 @import url(github-light.css);
 
-
+/*********************************************
+commonly use css                             *
+*********************************************/
 html
 {
 	font-size:62.5%;    /*default:16px;   now is 10px;*/
@@ -83,30 +85,8 @@ blockquote
 	border-left: 4.5px solid rgba(0,0,0,0.20);
 	height:auto;
 }
-@media screen and (max-width:1100px){
-	.inner
-	{
-		width:80%;
-	}
-	#nav_bar_a1
-	{
-		width:35%;
-	}
-	#nav_bar_ul
-	{
-		width:65%;
-	}
-}
-@media screen and (max-width:520px){
-    #nav_bar_ul
-	{
-		display:none;
-	}
-	#nav_bar_a1
-	{
-		width:100%;
-	}
-}
+
+
 
 
 /*********************************************
@@ -121,8 +101,8 @@ index.html                                   *
 }
 #Myhead img
 {
-	width:100px;
-	height:110px;
+	width:80px;
+	height:90px;
 }
 #Myhead a
 {
@@ -168,6 +148,7 @@ index.html                                   *
 
 
 
+
 /*********************************************
 foot                                         *
 *********************************************/
@@ -175,6 +156,8 @@ foot                                         *
 {
 	text-align:center;
 }
+
+
 
 
 
@@ -242,3 +225,46 @@ span
 }
 
 
+
+
+
+/*********************************************
+@media screen                                *
+*********************************************/
+@media screen and (max-width:1100px){
+	.inner
+	{
+		width:80%;
+	}
+	#nav_bar_a1
+	{
+		width:35%;
+	}
+	#nav_bar_ul
+	{
+		width:65%;
+	}
+}
+@media screen and (max-width:520px){
+    #nav_bar_ul
+	{
+		display:none;
+	}
+	#nav_bar_a1
+	{
+		width:100%;
+	}
+	#index_button1
+	{
+		width:150px;
+		float:none;
+		margin:0 auto;
+	}
+	#index_button2
+	{
+		width:150px;
+		float:none;
+		margin:0 auto;
+		margin-top:60px;
+	}
+}

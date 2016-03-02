@@ -20,7 +20,7 @@ body
 {
 	height:50px;
 	width:100%;
-	background-color:rgba(118,118,118,0.30);
+	background-color:rgba(118,118,118,0.15);
 	position:fixed;
 	top:0px;
 	left:0px;
@@ -68,22 +68,30 @@ body
 }
 .inner
 {
-	width:760px;
+	width:700px;
 	height:450px;
 	margin:0 auto;
 }
 #blogcontent
 {
 	background-color:rgba(255,255,255,1.00);
-	font: 1.5rem;
+	font: 1.5rem Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif ;
+}
+#blogcontent h2
+{
+	text-align:center;
 }
 blockquote
 {
 	font-style:italic;
 	color:rgba(0,0,0,0.50);
-	padding: 0 0 0 20px;
-	border-left: 4.5px solid rgba(0,0,0,0.20);
 	height:auto;
+}
+pre
+{
+	background-color:rgba(255,255,255,1.00);
+	border:solid 0px;
+	font-size:1.8rem;
 }
 
 

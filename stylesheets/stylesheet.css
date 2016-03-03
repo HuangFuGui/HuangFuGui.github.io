@@ -241,6 +241,8 @@ About Me                                     *
 }
 #xx span
 {
+	position:relative;
+	top:30px;
 	font:2.0rem "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
 }
 
@@ -287,5 +289,9 @@ About Me                                     *
 		float:none;
 		margin:0 auto;
 		margin-top:60px;
+	}
+	#xx span
+	{
+	    	font:1.0rem "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
 	}
 }

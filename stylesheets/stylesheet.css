@@ -67,8 +67,8 @@ body
 }
 .inner
 {
-	width:700px;
-	height:450px;
+	width:800px;
+    height:450px;
 	margin:0 auto;
 }
 #blogcontent
@@ -230,6 +230,20 @@ span
 {
 	font-weight:600;
 }
+
+
+/*********************************************
+About Me                                     *
+*********************************************/
+#xx
+{
+	text-align:center;
+}
+#xx span
+{
+	font:2.0rem "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+}
+
 
 
 

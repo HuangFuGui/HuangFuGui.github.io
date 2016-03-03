@@ -36,3 +36,9 @@
 1.complete my first blog!
 
                                                         --- 2016/3/2
+
+
+
+1.Thinking about how to design about me.html
+
+                                                        --- 2016/3/3

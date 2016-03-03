@@ -245,7 +245,10 @@ About Me                                     *
 	top:30px;
 	font:2.0rem "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
 }
-
+#yy
+{
+	width:100px; height:100px; margin:0 auto; margin-top:80px; background-image:url(../images/7AA619B788AC3CAB602A2AF483DA4E5F.jpg); background-size:cover; border-radius:100px;
+}
 
 
 
@@ -292,6 +295,12 @@ About Me                                     *
 	}
 	#xx span
 	{
-	    	font:1.0rem "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	    font:1.2rem "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	}
+	#yy 
+	{
+		width:70px;
+		height:70px;
+		border-radius:70px;
 	}
 }

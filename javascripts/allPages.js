@@ -66,10 +66,10 @@ $(function ()
 	   $(window).scroll(function()
 	  {
 		  if($(window).scrollTop()<100){
-			 $("#xx").css("display","none");
+			 $("#about_me_left").fadeOut(1000);
 		  }
 		  else{
-			 $("#xx").fadeIn(400);
+			 $("#about_me_left").fadeIn(1000);
 		  }
 	  });
 

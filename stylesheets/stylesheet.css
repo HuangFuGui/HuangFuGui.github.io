@@ -235,29 +235,65 @@ span
 /*********************************************
 About Me                                     *
 *********************************************/
-#xx
+
+#about_me_left
 {
 	text-align:center;
+	background-image:url(../images/5.png);
+	background-size:cover; 
+	display:none; 
+	width:25%;
+	height:500px; 
+	float:left ; 
+	position:fixed; 
+	bottom:0px; 
+	color:rgba(255,255,255,0.70);
 }
-#xx p
+#about_me_left p
 {
 	position:relative;
 	top:30px;
 	font:2.0rem Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
 }
-#xx span
+#about_me_left span
 {
 	position:relative;
 	top:30px;
 	font:2.0rem "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
 }
-#yy
+#about_me_headimg
 {
-	width:100px; height:100px; margin:0 auto; margin-top:60px; background-image:url(../images/7AA619B788AC3CAB602A2AF483DA4E5F.jpg); background-size:cover; border-radius:100px;
+	width:100px; 
+	height:100px; 
+	margin:0 auto; 
+	margin-top:60px; 
+	background-image:url(../images/7AA619B788AC3CAB602A2AF483DA4E5F.jpg); 
+	background-size:cover; 
+	border-radius:100px;
 }
-#gg
+#about_me_linklist
 {
-	margin-top:-15px;
+	margin-top:45px;
+}
+#about_me_linklist div
+{
+	width:33%; 
+	float:left;
+}
+#about_me_linklist div img
+{
+	height:25px; 
+	width:25px;
+	border-radius:25px;
+}
+#about_me_foot
+{
+	margin-top:-30px;
+}
+#about_me_linklist div img:hover
+{
+	cursor:pointer;
+	box-shadow:#8AFDFF 0px 0px 8px;
 }
 
 
@@ -278,6 +314,20 @@ About Me                                     *
 	#nav_bar_ul
 	{
 		width:65%;
+	}
+	#about_me_left span
+	{
+	    font:1.5rem "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	}
+	#about_me_headimg 
+	{
+		width:85px;
+		height:85px;
+		border-radius:85px;
+	}
+	#about_me_foot p
+	{
+		font-size:15px;
 	}
 }
 @media screen and (max-width:520px){
@@ -302,17 +352,17 @@ About Me                                     *
 		margin:0 auto;
 		margin-top:60px;
 	}
-	#xx span
+	#about_me_left span
 	{
 	    font:1.2rem "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
 	}
-	#yy 
+	#about_me_headimg 
 	{
 		width:70px;
 		height:70px;
 		border-radius:70px;
 	}
-	#gg p
+	#about_me_foot p
 	{
 		font-size:10px;
 	}

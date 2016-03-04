@@ -239,7 +239,7 @@ About Me                                     *
 #about_me_left
 {
 	text-align:center;
-	background-image:url(../images/5.png);
+	background-image:url(../images/6.png);
 	background-size:cover; 
 	display:none; 
 	width:25%;
@@ -295,9 +295,70 @@ About Me                                     *
 	cursor:pointer;
 	box-shadow:#8AFDFF 0px 0px 8px;
 }
-
-
-
+#about_me_right
+{
+	width:74%;
+	height:2000px; 
+	float:right;
+	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+}
+#about_me_right_inner
+{
+	width:86%; 
+	margin:0 auto;
+}
+#about_me_right_inner h1
+{
+	color:rgba(0,0,0,0.65);
+	position:relative;
+	top:30px;
+}
+#about_me_right_inner h4
+{
+	line-height:30px;
+	position:relative;
+	top:50px;
+	color:rgba(164,164,164,1.00);
+	word-break:break-all;
+}
+#like_star
+{
+	margin-top:140px;
+}
+#like_star div
+{
+	float:left;
+	width:40%;	
+	height:200px;
+	background-image:url(../images/7AA619B788AC3CAB602A2AF483DA4E5F.jpg);
+	background-size:cover;
+	margin-left:40px;
+	margin-top:30px;
+	background-color:rgba(0,0,0,0.20);
+	border-radius:10px;
+	text-align:center;
+}
+#like_star div p
+{
+	font:2.0rem Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	color:rgba(215,215,215,1.00);
+	display:none;
+}
+#like_star div:hover
+{
+	cursor:pointer;
+	opacity:0.8;
+}
+#like_star div:hover p
+{
+	display:block;
+	text-decoration:none;
+}
+#like_star p
+{
+	position:relative;
+	top:100px;
+}
 
 /*********************************************
 @media screen                                *
@@ -328,6 +389,19 @@ About Me                                     *
 	#about_me_foot p
 	{
 		font-size:15px;
+	}
+}
+@media screen and (max-width:800px){
+    #like_star div
+	{
+		width:80%;
+		height:250px;
+		float:none;
+	}
+	#like_star div p
+	{
+		position:relative;
+		top:125px;
 	}
 }
 @media screen and (max-width:520px){
@@ -365,5 +439,18 @@ About Me                                     *
 	#about_me_foot p
 	{
 		font-size:10px;
+	}
+	#like_star div
+	{
+		width:80%;
+		height:150px;
+		float:none;
+		position:relative;
+		left:-30px;
+	}
+	#like_star div p
+	{
+		position:relative;
+		top:75px;
 	}
 }

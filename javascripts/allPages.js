@@ -72,5 +72,10 @@ $(function ()
 			 $("#about_me_left").fadeIn(1000);
 		  }
 	  });
+	  
+	/* var width = document.getElementById("haha").offsetWidth;  /*获取div当前width*/
+	/* alert(width);
+	 $("#like_star div").css("height",width+"px");*/
 
- });// JavaScript Document
+ });// JavaScript Document 
+ 		

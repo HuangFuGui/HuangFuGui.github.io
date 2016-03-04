@@ -42,3 +42,9 @@
 1.Thinking about how to design about me.html
 
                                                         --- 2016/3/3
+
+
+1.designing my about me.html
+
+
+                                                        --- 2016/3/4

@@ -253,9 +253,12 @@ About Me                                     *
 }
 #yy
 {
-	width:100px; height:100px; margin:0 auto; margin-top:80px; background-image:url(../images/7AA619B788AC3CAB602A2AF483DA4E5F.jpg); background-size:cover; border-radius:100px;
+	width:100px; height:100px; margin:0 auto; margin-top:60px; background-image:url(../images/7AA619B788AC3CAB602A2AF483DA4E5F.jpg); background-size:cover; border-radius:100px;
 }
-
+#gg
+{
+	margin-top:-15px;
+}
 
 
 
@@ -308,5 +311,9 @@ About Me                                     *
 		width:70px;
 		height:70px;
 		border-radius:70px;
+	}
+	#gg p
+	{
+		font-size:10px;
 	}
 }

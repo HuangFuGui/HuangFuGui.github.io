@@ -239,6 +239,12 @@ About Me                                     *
 {
 	text-align:center;
 }
+#xx p
+{
+	position:relative;
+	top:30px;
+	font:2.0rem Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+}
 #xx span
 {
 	position:relative;

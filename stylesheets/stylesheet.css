@@ -515,7 +515,7 @@ span.like_star_details
 	}
 	.like_star_div_outer
 	{
-		width:80%;
+		width:94%;
 		height:160px;
 		float:none;
 		position:relative;
@@ -524,8 +524,12 @@ span.like_star_details
 	}
 	.like_star_div p
 	{
-		position:relative;
+		posit122ion:relative;
 		top:75px;
+	}
+	.like_star_div
+	{
+		height:170px;
 	}
 	#my_diary
 	{

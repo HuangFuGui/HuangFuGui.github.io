@@ -433,6 +433,30 @@ span.like_star_details
 
 
 
+
+
+/*********************************************
+My Diary
+*********************************************/
+#diary_div
+{
+	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+}
+#diary_div h1
+{
+	color:rgba(0,0,0,0.65);
+	position:relative;
+	top:30px;
+}
+#diary_div h4
+{
+	line-height:30px;
+	position:relative;
+	top:50px;
+	color:rgba(164,164,164,1.00);
+	word-break:break-all;
+}
+
 /*********************************************
 @media screen                                *
 *********************************************/
@@ -516,20 +540,21 @@ span.like_star_details
 	.like_star_div_outer
 	{
 		width:94%;
-		height:160px;
+		height:150px;
 		float:none;
 		position:relative;
 		left:-30px;
 		margin-top:120px;
 	}
-	.like_star_div p
-	{
-		posit122ion:relative;
-		top:75px;
-	}
+	
 	.like_star_div
 	{
-		height:170px;
+		height:160px;
+	}
+	.like_star_div p
+	{
+		position:relative;
+		top:-20px;
 	}
 	#my_diary
 	{

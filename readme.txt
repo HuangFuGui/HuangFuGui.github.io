@@ -51,6 +51,7 @@
 
 
 1.I want to note my dribs and drabs everyday on github.
+2.design diary.html and write my first diary.
 
 
                                                         --- 2016/3/7

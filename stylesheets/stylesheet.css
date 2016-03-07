@@ -336,7 +336,7 @@ About Me                                     *
 }
 #like_star
 {
-	margin-top:140px;
+	margin-top:240px;
 }
 .like_star_div_outer
 {
@@ -391,6 +391,42 @@ span.like_star_details
 	font: 1.5rem Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif ;
 	font-family:"楷体";
 	color:rgba(0,0,0,0.80);
+}
+#my_diary
+{
+	width:180px;
+	height:55px;
+	float:left;
+	border:solid 3px rgba(183,183,183,0.20);
+	text-align:center;
+	margin-top:130px;
+	border-radius:5px;
+}
+#my_diary:hover
+{
+	border-color:rgba(0,235,255,0.60);
+}
+#my_diary:hover span
+{
+	color:rgba(0,211,255,0.50);
+}
+#my_diary_a
+{
+	text-decoration:none;
+	width:180px;
+	height:55px;
+}
+#my_diary_a:hover
+{
+	cursor:pointer;
+}
+#my_diary span
+{
+	position:relative;
+	top:12px;
+	color:rgba(119,119,119,1.00);
+	font-size:1.8rem;
+	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
 }
 
 
@@ -490,5 +526,9 @@ span.like_star_details
 	{
 		position:relative;
 		top:75px;
+	}
+	#my_diary
+	{
+		width:100%;
 	}
 }

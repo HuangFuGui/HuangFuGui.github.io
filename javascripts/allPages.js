@@ -73,9 +73,10 @@ $(function ()
 		  }
 	  });
 	  
+	  
+	  
 	/* var width = document.getElementById("haha").offsetWidth;  /*获取div当前width*/
 	/* alert(width);
 	 $("#like_star div").css("height",width+"px");*/
 
  });// JavaScript Document 
- 		

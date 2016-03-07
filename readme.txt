@@ -48,3 +48,9 @@
 
 
                                                         --- 2016/3/4
+
+
+1.I want to note my dribs and drabs everyday on github.
+
+
+                                                        --- 2016/3/7

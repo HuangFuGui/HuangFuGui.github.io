@@ -192,6 +192,7 @@ span
 {
 	font-size:25px;
 	margin-left:20px;
+	line-height:40px;
 }
 #tagsBox a:hover
 {
@@ -453,9 +454,14 @@ My Diary
 	line-height:30px;
 	position:relative;
 	top:50px;
-	color:rgba(164,164,164,1.00);
+	color:rgba(130,130,130,1.00);
 	word-break:break-all;
 }
+
+
+
+
+
 
 /*********************************************
 @media screen                                *
@@ -546,18 +552,8 @@ My Diary
 		left:-30px;
 		margin-top:120px;
 	}
-	
 	.like_star_div
 	{
 		height:160px;
-	}
-	.like_star_div p
-	{
-		position:relative;
-		top:-20px;
-	}
-	#my_diary
-	{
-		width:100%;
 	}
 }

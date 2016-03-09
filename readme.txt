@@ -61,3 +61,9 @@
 
 
                                                         --- 2016/3/8
+
+
+1.learn to use ps to make my blog picture size down
+
+
+                                                        --- 2016/3/9

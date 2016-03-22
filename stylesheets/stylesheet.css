@@ -557,3 +557,34 @@ My Diary
 		height:160px;
 	}
 }
+
+
+
+
+/*************************
+jquery-ui
+*************************/
+
+.inform-box{
+    display: none;
+    position:fixed;
+    width:120px;
+    height:30px;
+	margin-left:570px;
+    margin-top:460px;
+    border-radius: 20px;
+    background-color:#171a21;
+    z-index: 1000;
+	text-align:center;
+}
+@media screen and (max-width:520px){
+	.inform-box{
+		margin-left:110px;
+	}
+}
+
+.inform-txt{
+    color:rgba(62,234,255,1.00);
+    font-family: "微软雅黑";
+    line-height: 30px;
+}

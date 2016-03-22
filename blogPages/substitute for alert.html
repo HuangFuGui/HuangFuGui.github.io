@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Huangfugui.GitHub.io : ">
+    
+    <link rel="shortcut icon" href="../images/headimg.png">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/bootstrap.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../stylesheets/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/animate.css">
+    
+    <script type="text/javascript" src="../javascripts/jquery-2.0.0.min.js"></script>
+    <script type="text/javascript" src="../javascripts/bootstrap.js"></script>
+    <script type="text/javascript" src="../javascripts/allPages.js"></script>
+    <script type="text/javascript" src="../javascripts/jquery-ui.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="../stylesheets/monokai_sublime.min.css">
+	<script type="text/javascript" src="../javascripts/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+
+    <title>modal dialog</title>
+
+    <title>Huangfugui.GitHub.io</title>
+
+  </head>
+
+<body>
+    <div class="inform-box">
+        <span class="inform-txt center-block"></span>
+    </div>
+
+    <div id="headercontainer">
+     <div class="inner" id="header"> 
+         <div id="navigation_bar">
+             <div id="nav_bar_a1">
+                <a href="../index.html">My website</a>
+             </div>
+             <div id="nav_bar_ul"> 
+                <a href="../blogIndex.html">Blogs</a>
+                <a href="../About Me.html">About me</a>
+                <a href="https://github.com/HuangFuGui">My github</a>  
+             </div>
+         </div>
+         <span class="animated fadeInUp">Huangfugui.GitHub.io</span>
+         <span class="animated fadeInUp">黄复贵的博客</span>
+         <span class="animated fadeInUp">BIT   Software   2014</span>
+     </div>
+    </div>
+    
+    <div class="inner" id="blogcontent">
+    	<blockquote><p>Substitute jquery-ui for alert in website</p></blockquote>
+        
+        <!-- blog content  -->
+        <h2> inform box</h2>
+        <br /><br />
+        
+        <!-- 演示 -->
+        <button class="btn btn-primary" onClick="show_jquery_ui()">点击查看效果</button>
+        <br /><br />
+        <pre>
+   首先，需要引入jquery-ui.js这个javascript文件；
+   
+   然后，在相应html页面body标签下面第一行加入一个div，class="inform-box",该div内加一span标签，class="inform-txt center-block";
+   
+   其次，在css文件中加入如下代码：
+   <div class="highlighter-rouge" style="margin-top:-100px; margin-bottom:-80px;">
+       <pre class="highlight">
+           <code>
+ .inform-box
+ {
+     display: none;
+     position:fixed;
+     width:120px;
+     height:30px;
+     margin-left:570px;
+     margin-top:460px;
+     border-radius: 20px;
+     background-color:#171a21;
+     z-index: 1000;
+     text-align:center;
+ }
+ .inform-txt
+ {
+    color:rgba(62,234,255,1.00);
+    font-family: "微软雅黑";
+    line-height: 30px;
+ }
+           </code>
+       </pre>
+   </div>  
+   最后，在页面相应js内加入两个函数：
+   <div class="highlighter-rouge" style="margin-top:-100px;">
+       <pre class="highlight">
+           <code>
+function RaiseInform(str,type,length){
+    if(length==undefined) length=1000;
+    else length=2000;
+    $(".inform-box").css("width", SetToastWidth(type));
+    $(".inform-txt").text(str);
+    $(".inform-box" ).toggle("puff");
+    setTimeout(function() {
+        $(".inform-box" ).toggle( "puff");
+    }, length);
+}
+//设置Toast宽度
+function SetToastWidth(type){
+    //type会对应长度
+    //默认1
+    if(type==1) return "120px";
+    else if(type==2) return "240px";
+    else if(type==3) return "360px";
+}
+
+var show_jquery_ui = function(){
+	RaiseInform("哈哈",2);
+};
+           </code>
+       </pre>
+   </div>    
+        </pre>
+    </div>
+</body>
+</html>

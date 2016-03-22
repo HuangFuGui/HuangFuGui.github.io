@@ -85,3 +85,8 @@
 
 
                                                         --- 2016/3/19
+
+1.update my blogpage and my diary
+
+
+                                                        --- 2016/3/22

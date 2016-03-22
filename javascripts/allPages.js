@@ -80,3 +80,30 @@ $(function ()
 	 $("#like_star div").css("height",width+"px");*/
 
  });// JavaScript Document 
+ 
+ 
+ /**********************
+ jquery-ui
+ **********************/
+function RaiseInform(str,type,length){
+    if(length==undefined) length=1000;
+    else length=2000;
+    $(".inform-box").css("width", SetToastWidth(type));
+    $(".inform-txt").text(str);
+    $(".inform-box" ).toggle("puff");
+    setTimeout(function() {
+        $(".inform-box" ).toggle( "puff");
+    }, length);
+}
+//设置Toast宽度
+function SetToastWidth(type){
+    //type会对应长度
+    //默认1
+    if(type==1) return "120px";
+    else if(type==2) return "240px";
+    else if(type==3) return "360px";
+}
+
+var show_jquery_ui = function(){
+	RaiseInform("哈哈",2);
+};

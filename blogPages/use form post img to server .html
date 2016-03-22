@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Huangfugui.GitHub.io : ">
+    
+    <link rel="shortcut icon" href="../images/headimg.png">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/bootstrap.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../stylesheets/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/animate.css">
+    
+    <script type="text/javascript" src="../javascripts/jquery-2.0.0.min.js"></script>
+    <script type="text/javascript" src="../javascripts/bootstrap.js"></script>
+    <script type="text/javascript" src="../javascripts/allPages.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="../stylesheets/monokai_sublime.min.css">
+	<script type="text/javascript" src="../javascripts/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+
+    <title>post(form) img to server</title>
+
+    <title>Huangfugui.GitHub.io</title>
+
+  </head>
+
+<body>
+    <div id="headercontainer">
+     <div class="inner" id="header"> 
+         <div id="navigation_bar">
+             <div id="nav_bar_a1">
+                <a href="../index.html">My website</a>
+             </div>
+             <div id="nav_bar_ul"> 
+                <a href="../blogIndex.html">Blogs</a>
+                <a href="../About Me.html">About me</a>
+                <a href="https://github.com/HuangFuGui">My github</a>  
+             </div>
+         </div>
+         <span class="animated fadeInUp">Huangfugui.GitHub.io</span>
+         <span class="animated fadeInUp">黄复贵的博客</span>
+         <span class="animated fadeInUp">BIT   Software   2014</span>
+     </div>
+    </div>
+    
+    <div class="inner" id="blogcontent">
+    	<blockquote><p>Use form post img from localhost to the server</p></blockquote>
+        
+        <!-- blog content  -->
+        <h2>Post(form)</h2>
+        <br /><br />
+        <pre>
+   form 表单能实现上传文件到服务器的功能，form的请求为同步方式，也就是说，页面一定会跳转，因此，要进行页面的重定向。页面的刷新不可避免。
+   
+   form表单语句：
+   <img src="../images/form.png" style="width:100%;">
+   
+   其中要注意：
+   1.有3个name attribute,这是用于后台php获取相应post内容的依据（例如$_POST["headImgHelp"]），一定要是name attribute。换成id后台php不能识别。
+   2.有一个hidden的input标签，这是常用的用来传参的办法。
+   3.file的input标签内，name='file'一定要有，是用来给后台识别file类型或名字的依据。
+   
+   随后，在js将表单提交：
+   <div class="highlighter-rouge" style="margin-top:-100px; margin-bottom:-100px;">
+       <pre class="highlight">
+           <code>
+document.getElementById('form1').action="../php/postHeadImg.php";
+document.getElementById('form1').submit();
+           </code>
+       </pre>
+   </div> 
+   若有2个或2个以上form表单，只需给表单定义不同的id，例：form1,form2,form3...等，在js通过不同id来获取表单提交即可。
+   
+   后台php（../php/postHeadImg.php）:
+   <div class="highlighter-rouge" style="margin-top:-100px; margin-bottom:-130px;">
+       <pre class="highlight">
+           <code>
+
+//用PHP上传时，需要对内容作详细的检查，例如是否容许读写文件，文件格式、文件大小是否在你指定的大小内等。
+$file = $_FILES['file'];//得到传输的数据
+
+//得到文件名称
+$name = $file['name'];
+
+$type = strtolower(substr($name,strrpos($name,'.')+1)); //得到文件类型，并且都转化成小写
+
+$allow_type = array('jpg','jpeg','gif','png'); //定义允许上传的类型
+
+//判断文件类型是否被允许上传
+if(!in_array($type, $allow_type)){
+  //如果不被允许，则直接停止程序运行
+  return ;
+}
+
+//判断是否是通过HTTP POST上传的
+if(!is_uploaded_file($file['tmp_name'])){
+  //如果不是通过HTTP POST上传的
+  return ;
+}
+
+$upload_path = "../img/newUser/"; //上传文件的存放路径
+//开始移动文件到相应的文件夹
+
+if(move_uploaded_file($file['tmp_name'],$upload_path.$_POST["headImgHelp"])){
+	
+ // rename($upload_path.$name,$upload_path.$_POST["headImgHelp"]);
+
+  echo "successfully";
+   //页面重定向：只需要在php中插入js的跳转语法echo "window.location.href=''";（在此前要echo script language='javascript'的标签）
+}
+else{
+  echo "Failed!";
+}
+//header("Location:../index.php",false);
+
+           </code>
+       </pre>
+   </div>
+   
+   注意：$_POST["headImgHelp"]绝对不能为空（为空会报错，错误信息为：The second argument to copy() function cannot be a directory）。所以在js要预先判断headImgHelp是否赋值成功。也就是在js中document.getElementById('headImgHelp').value = "newUser"+data+".jpg";语句一定要被执行到。
+        </pre>
+        <br /><br /><hr/>
+    <p id="footer_p">
+                    Copyright &copy; Huangfugui 2016
+                    <br>
+                    Theme © <a href="http://HuangFuGui.github.io">blog website</a> | <a href="https://github.com/HuangFuGui/HuangFuGui.github.io"> Star me</a>
+    </p>
+   </div>
+   
+</body>
+</html>

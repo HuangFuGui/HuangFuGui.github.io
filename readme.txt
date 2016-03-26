@@ -90,3 +90,12 @@
 
 
                                                         --- 2016/3/22
+
+
+1.note about me and update my diary
+
+
+                                                        --- 2016/3/26
+
+
+ 

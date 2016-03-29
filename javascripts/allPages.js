@@ -83,7 +83,7 @@ $(function ()
  
  
  /**********************
- jquery-ui
+ jquery-ui             *
  **********************/
 function RaiseInform(str,type,length){
     if(length==undefined) length=1000;
@@ -107,3 +107,21 @@ function SetToastWidth(type){
 var show_jquery_ui = function(){
 	RaiseInform("哈哈",2);
 };
+
+
+
+ /**********************
+assignment.html        *
+ **********************/
+ var getPermission = function(){
+	 
+	 //$("#xixi").replaceWith('<button class="btn  btn-primary">haha!</button>');
+ };
+ 
+ var haha = "xixi";
+ var now = 10;
+ var addAssignment = function(){
+	 /*$("#assignmentDiv").append('<h4>'+haha+'</h4>');
+	 $("#assignmentDiv").append('<div class="progress"><div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="'+now+'" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: '+now+'%;">'+now+'%</div></div>');*/
+	 alert($("#datenow").val());
+ };

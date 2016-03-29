@@ -462,6 +462,28 @@ My Diary
 
 
 
+/*********************************************
+assignment.html                              *
+*********************************************/
+#assignmentDiv
+{
+	height:auto;
+}
+#addAssignment .input-group
+{
+	width:46%;
+	margin-top:10px;
+}
+#assignmentValue.input-group
+{
+	width:100%;
+	margin-top:80px;
+	margin-bottom:20px;
+}
+
+
+
+
 
 /*********************************************
 @media screen                                *
@@ -555,6 +577,15 @@ My Diary
 	.like_star_div
 	{
 		height:160px;
+	}
+	#addAssignment .input-group
+	{
+		width:100%;
+		float:none;
+	}
+	#assignmentValue.input-group
+	{
+		margin-top:120px;
 	}
 }
 

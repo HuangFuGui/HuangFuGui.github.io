@@ -40,7 +40,7 @@
              </div>
          </div>
          <span class="animated zoomIn">Huangfugui.GitHub.io</span>
-         <span class="animated zoomIn">Dribs And Drabs</span>
+         <span class="animated zoomIn">Weekly assignment</span>
          <span class="animated zoomIn">这一生，想做一名浪漫极客</span>
     </div>
    </div>
@@ -102,55 +102,35 @@
                     
                     <div class="input-group" id="assignmentValue">
                       <span class="input-group-addon" id="sizing-addon2"><img style="width:20px;" src="images/iconfont-assignment.png"></span>
-                      <input type="text" class="form-control" placeholder="assignment" aria-describedby="sizing-addon2">
+                      <input type="text" id="assignment" class="form-control" placeholder="assignment" aria-describedby="sizing-addon2">
                     </div>
                     
                     </div>    
                 </div>
     
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-info" style="margin-left:30px; width:80px;" data-dismiss="modal" onClick="getPermission()">Confirm</button>
+                    <button type="button" class="btn btn-info" style="margin-left:30px; width:80px;" data-dismiss="modal" onClick="addAssignment()">Confirm</button>
                 </div>
     
             </div>
         </div>
      </div>
      
-     <h1>March 28-April 3,2016</h1><br />
      
-     <img src="images/iconfont-edit.png" style="float:right; position:relative; top:10px;"><h4>去健身房</h4>
-     <div class="progress">
-      <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-        60%
-      </div>
-     </div><br />
-     
-     <h4>给github blog 加一页面用于管理每周任务进度</h4>
-     <div class="progress">
-      <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 0%;">
-        0%
-      </div>
-     </div><br />
-     
-     <h4>开始接触Javaweb(用java写网页，极客学院)</h4>
-     <div class="progress">
-      <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 0%;">
-        0%
-      </div>
-     </div><br />
-     
+     <div id="assignmentDivInside">
+     </div>
 
-     <button class="btn btn-block" data-toggle="modal" data-target="#addAssignment">添加任务</button>
+     <button class="btn btn-block" id="addAssignmentButton" style="margin-top:90px;"  data-toggle="modal" data-target="#addAssignment">添加任务</button>
  
      <br /><br /><br />
      <nav>
       <ul class="pager">
-        <li class="previous disabled"><a href="#"><span aria-hidden="true">&larr;</span> Last week</a></li>
-        <li class="next"><a href="#">Next week <span aria-hidden="true">&rarr;</span></a></li>
+        <li class="previous" id="pager1"><a onClick="upPage()"><span aria-hidden="true">&larr;</span> Last week</a></li>
+        <li class="next" id="pager2"><a onClick="nextPage()">Next week <span aria-hidden="true">&rarr;</span></a></li>
       </ul>
     </nav>
       
-      </div><br />
+      <br />
 
 
       
@@ -160,5 +140,6 @@
                     <br>
                     Theme © <a href="http://HuangFuGui.github.io">blog website</a> | <a href="https://github.com/HuangFuGui/HuangFuGui.github.io"> Star me</a>
     </p>
+    </div>
 </body>
 </html>

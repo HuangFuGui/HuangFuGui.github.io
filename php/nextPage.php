@@ -3,9 +3,9 @@ require "link.php";
 require "jsonHelper.php";
 $array;
 $i=0;
-$sql = "SELECT * FROM weekassignment WHERE id >0";
+$sql = "SELECT * FROM weekassignment WHERE id >$_POST[pageDown]";
 $result = $mysql->query($sql);
-while($final = $result->fetch_array()){
+/*while($final = $result->fetch_array()){
 	$array[$i]['id'] = $final['id'];
 	$array[$i]['startdate'] = $final['startdate'];
 	$array[$i]['enddate'] = $final['enddate'];
@@ -13,5 +13,6 @@ while($final = $result->fetch_array()){
 	$array[$i]['process'] = $final['process'];
 	$i++;
 }
-echo JSON($array);
+echo JSON($array);*/
+echo $result->num_rows;
 ?>

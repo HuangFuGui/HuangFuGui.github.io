@@ -121,7 +121,6 @@ assignment.html        *
  var haha = "xixi";
  var now = 10;
  var addAssignment = function(){
-	 /*$("#assignmentDiv").append('<h4>'+haha+'</h4>');
-	 $("#assignmentDiv").append('<div class="progress"><div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="'+now+'" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: '+now+'%;">'+now+'%</div></div>');*/
-	 alert($("#datenow").val());
+
+	 
  };

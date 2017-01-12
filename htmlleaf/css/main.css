@@ -191,7 +191,8 @@ button:focus {
 }
 
 .hero > div {
-	background: #FFFFFF url(../../images/qianfa.jpg) no-repeat 50% 0;
+	background: #FFFFFF url(../../images/back.jpg);
+	background-size: cover;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 }
